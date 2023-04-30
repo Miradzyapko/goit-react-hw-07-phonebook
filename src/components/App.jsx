@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 import { fetchContacts } from 'redux/action';
 
 export function App()  {
-  /*const contactsValue = useSelector((state) => state.contacts.contacts);*/
+ 
   const dispatch = useDispatch();
  const isLoading = useSelector(selectIsLoading)
 const error = useSelector(selectError)
@@ -29,7 +29,7 @@ const error = useSelector(selectError)
     return (
       <Container>
         <ContactForm title="Phonebook" /* onSubmit={addContact}*//>
-         {isLoading && !error  && <b></b>}
+         { isLoading && !error  && <b></b> }
          <Title>Contacts</Title>
          <Filter
          /* onChange={changeFilter}
