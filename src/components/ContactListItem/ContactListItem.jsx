@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from './ContactList.Styled';
 import { ListItem } from './ContactListItem.Styled'
- export const ContactListItem = ({ name, number, id, onDelete }) => {
+ export const ContactListItem = ({ name, number, id, onDel }) => {
   return (
     <ListItem>
       <li>
